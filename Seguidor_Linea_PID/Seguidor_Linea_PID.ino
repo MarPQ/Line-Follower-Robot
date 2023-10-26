@@ -48,7 +48,7 @@ void loop()
 {
   // Leer sensores
   qtr.read(IR);
-
+  // Calcula ganancias PID
   p = 3*IR[0] + 2*IR[1] + IR[2] - IR[3] - 2*IR[4] - 3*IR[5];
 
   i = i+p;
